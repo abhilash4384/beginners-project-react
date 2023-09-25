@@ -6,6 +6,11 @@ export const Container = styled.div`
 	border-radius: 20px;
 	background: #d9eee1;
 	opacity: 0.8;
+
+	@media (max-width: 768px) {
+		margin: 0px;
+		padding: 0px 10px;
+	}
 `;
 
 export const FlexCard = styled.div`
@@ -31,6 +36,10 @@ export const StyledInput = styled.input`
 	width: ${({ width }) => width ?? '400px'};
 	padding: 0px 10px;
 	font-weight: bolder;
+
+	@media (max-width: 768px) {
+		width: '300px';
+	}
 `;
 
 export const StyledButton = styled.button`
